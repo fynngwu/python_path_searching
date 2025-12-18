@@ -16,7 +16,7 @@ def generate_launch_description():
     
     # A*路径规划节点
     astar_planner_node = Node(
-        package='path_searching',
+        package='python_path_searching',
         executable='astar_planner_node.py',
         name='astar_planner',
         output='screen',
@@ -25,7 +25,7 @@ def generate_launch_description():
     
     # 全向轮跟踪节点
     omnidirectional_tracker_node = Node(
-        package='path_searching',
+        package='python_path_searching',
         executable='omnidirectional_tracker_node.py',
         name='omnidirectional_tracker',
         output='screen',
@@ -46,7 +46,7 @@ def generate_launch_description():
     
     # 路径决策节点（暂时不使用）
     # path_decision_node = Node(
-    #     package='path_searching',
+    #     package='python_path_searching',
     #     executable='path_decision_node.py',
     #     name='path_decision',
     #     output='screen',
@@ -55,7 +55,7 @@ def generate_launch_description():
     
     # 里程计模拟器节点
     odom_simulator_node = Node(
-        package='path_searching',
+        package='python_path_searching',
         executable='odom_simulator.py',
         name='odom_simulator',
         output='screen',
